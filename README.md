@@ -1,38 +1,34 @@
+📌 Project Overview
 
-🎬 Movie Recommender System
-Content-Based Movie Recommendation using Machine Learning
+The Movie Recommender System is a content-based recommendation engine that suggests similar movies based on metadata such as genres, keywords, cast, crew (director), and plot overview. The system leverages Natural Language Processing (NLP) techniques and Cosine Similarity to deliver fast and accurate movie recommendations through an interactive Streamlit web application.
 
-The Movie Recommender System is a content-based recommendation engine that suggests similar movies based on movie metadata such as genres, keywords, cast, crew (director), and plot overview. The system applies Natural Language Processing (NLP) and Cosine Similarity to provide accurate and fast recommendations through an interactive Streamlit web application.
-
-🚀 Features
+✨ Key Features
 
 Content-based movie recommendation
 
+NLP-driven similarity matching
+
 Uses TMDB 5000 Movies & Credits dataset
 
-NLP-based text processing
+Real-time movie posters, ratings, and trailers via TMDB API
 
-Cosine similarity for movie matching
+Fast response time with parallel API requests
 
-Real-time posters, ratings, and trailers using TMDB API
+Clean and user-friendly Streamlit interface
 
-Fast and interactive Streamlit interface
+🧠 How the System Works
 
-Optimized performance with parallel API calls
+Movie datasets are cleaned and merged
 
-🧠 Working Principle
+Important textual features are combined into a single representation
 
-Movie metadata is cleaned and merged from TMDB datasets
+Text data is vectorized using Bag of Words (BoW)
 
-Important text features are combined into a single tags column
+Cosine Similarity is calculated between movie vectors
 
-Text data is vectorized using Bag of Words (CountVectorizer)
+Top-N similar movies are recommended
 
-Cosine Similarity is computed between movie vectors
-
-Top 5 similar movies are recommended based on similarity score
-
-📊 Dataset
+📊 Dataset Information
 
 Source: TMDB 5000 Movie Dataset (Kaggle)
 
@@ -50,17 +46,17 @@ Crew (Director)
 
 Overview
 
-Numeric attributes such as budget and revenue are removed to focus only on content similarity.
+Numeric attributes (budget, revenue, etc.) are excluded to focus strictly on content similarity.
 
 🛠️ Technologies Used
 
-Programming Language: Python 3.9
+Programming Language
 
-Libraries:
+Python 3.9+
 
-Pandas
+Libraries & Tools
 
-NumPy
+Pandas & NumPy
 
 Scikit-learn
 
@@ -70,6 +66,8 @@ Streamlit
 
 Requests
 
-Model Storage: Pickle
+Pickle (model storage)
 
-API: TMDB API
+API
+
+TMDB API
